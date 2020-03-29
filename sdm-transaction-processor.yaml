@@ -1,0 +1,58 @@
+
+spring.rabbitmq.host: localhost
+spring.rabbitmq.port: 5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
+
+rabbitmq:
+  input_queue_name: sdm-queue
+  topic_exchange_name: sdm-exchange
+  input_routing_key: sdm-routing-key
+#  vhost: myhost // using default vhost: /   (%2f - in url -decoded)
+#  vhost: %2f
+  output_queue_name: sdm-raw-staging-queue
+  output_routing_key: sdm-raw-staging-routing-key
+
+transaction.scheduled-lock-interval: 100000
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sdm?serverTimezone=UTC
+    username: root
+    password: rootroot
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+  redis:
+    host: localhost
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+
+logging:
+  level:
+    ROOT: ERROR
+    com.sarbootcamp: DEBUG
+    org.springframework: ERROR
+    org.springframework.boot.context.config: DEBUG
+    org.springframework.data: DEBUG
+    org.springframework.web.method.support: TRACE
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+
+
+
