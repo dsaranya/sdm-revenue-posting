@@ -1,0 +1,40 @@
+ibm.mq.queueManager: QM1
+ibm.mq.channel: DEV.ADMIN.SVRCONN
+ibm.mq.connName: localhost(1414)
+ibm.mq.user: admin
+ibm.mq.password: passw0rd
+
+spring.rabbitmq.host: localhost
+spring.rabbitmq.port: 5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
+
+
+ibmmq:
+  queue_name: DEV.QUEUE.1    #default queue names 1 to 3
+rabbitmq:
+  queue_name: sdm-queue
+  topic_exchange_name: sdm-exchange
+  routing_key: sdm-routing-key
+#  vhost: myhost // using default vhost: /
+#  vhost: %2f
+
+logging:
+  level:
+    ROOT: ERROR
+    com.sarbootcamp: DEBUG
+    org.springframework: ERROR
+    org.springframework.boot.context.config: DEBUG
+    org.springframework.data: DEBUG
+    org.springframework.web.method.support: TRACE
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+
+
+
+
