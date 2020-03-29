@@ -3,3 +3,15 @@ ibm.mq.channel: DEV.ADMIN.SVRCONN
 ibm.mq.connName: localhost(1414)
 ibm.mq.user: admin
 ibm.mq.password: passw0rd
+
+
+logging:
+  level:
+    ROOT: ERROR
+    com.sarbootcamp: DEBUG
+    org.springframework: ERROR
+    org.springframework.boot.context.config: DEBUG
+    org.springframework.data: DEBUG
+    org.springframework.web.method.support: TRACE
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
