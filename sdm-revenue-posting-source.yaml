@@ -4,7 +4,7 @@ ibm.mq.connName: localhost(1414)
 ibm.mq.user: admin
 ibm.mq.password: passw0rd
 
-ibmmq.queue: DEV.QUEUE.3
+ibmmq.queue: DEV.QUEUE.1
 
 
 spring.rabbitmq.host: localhost
