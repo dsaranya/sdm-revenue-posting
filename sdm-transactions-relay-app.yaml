@@ -35,6 +35,13 @@ logging:
   pattern:
     console: "%d %-5level %logger : %msg%n"
 
+management.security.enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 
 
 
