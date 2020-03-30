@@ -13,8 +13,8 @@ spring.rabbitmq.password: guest
 ibmmq:
   queue_name: DEV.QUEUE.2    #default queue names 1 to 3
 rabbitmq:
-  queue_name: sdm-queue
-  topic_exchange_name: sdm-exchange
+  queue_name: sdm-queue-t
+  topic_exchange_name: sdm-exchange-t
   routing_key: sdm-routing-key
 #  vhost: myhost // using default vhost: /
 #  vhost: %2f
