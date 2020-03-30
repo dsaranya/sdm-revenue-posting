@@ -11,7 +11,7 @@ spring.rabbitmq.password: guest
 
 
 ibmmq:
-  queue_name: DEV.QUEUE.3    #default queue names 1 to 3
+  queue_name: DEV.QUEUE.1    #default queue names 1 to 3
 rabbitmq:
   queue_name: sdm-queue-test
   topic_exchange_name: sdm-exchange
