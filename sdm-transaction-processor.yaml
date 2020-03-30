@@ -13,7 +13,7 @@ rabbitmq:
   output_queue_name: sdm-raw-staging-queue
   output_routing_key: sdm-raw-staging-routing-key
 
-transaction.scheduled-lock-interval: 20000
+transaction.scheduled-lock-interval: 30000
 
 
 spring:
