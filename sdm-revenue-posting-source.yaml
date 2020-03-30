@@ -16,3 +16,8 @@ logging:
     org.springframework.web.method.support: TRACE
   pattern:
     console: "%d %-5level %logger : %msg%n"
+    
+spring.rabbitmq.host: localhost
+spring.rabbitmq.port: 5672
+spring.rabbitmq.username: guest
+spring.rabbitmq.password: guest
